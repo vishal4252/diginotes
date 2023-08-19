@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+nav,
+.offcanvas {
+    background-color: #08D9D6;
+}
+
+.navbar-toggler-icon {
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-close {
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 1.2em;
+    --bs-btn-close-focus-shadow: none;
+}
+
+.btn-close:hover {
+    opacity: 0.5;
+}
+
+.scroll-up-btn {
+    background-color: #08D9D6;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-up-btn ion-icon {
+    animation: scroll-up 0.8s infinite alternate;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.search-input {
+    width: 75vw;
+    height: 3.7rem;
+    padding: 0 4rem 0 1.5rem;
+    outline: #fff;
+    border-radius: 10rem;
+    border: none;
+    box-shadow: 1px 1px 7px -3px #000000;
+}
+
+.search-btn {
+    outline: none;
+    background: none;
+    border: none;
+    height: 3.7rem;
+    right: 18%;
+}
+
+.tag-line {
+    margin: auto;
+    width: 100%;
+    font-size: 13vw;
+}
+
+.quote-line {
+    margin: 2rem auto;
+    width: 90%;
+    font-size: 4.5vw;
+}
+
+.card {
+    box-shadow: 0px 1px 7px -3px #000000;
+}
+
+.left-footer,
+.right-footer {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .search-input {
+        width: 50vw;
+        height: 4rem;
+        padding: 0 4rem 0 3rem;
+    }
+
+    .search-btn {
+        width: 4rem;
+        height: 4rem;
+        right: 25.5%;
+    }
+
+    .tag-line {
+        margin: auto;
+        width: 75%;
+        font-size: 6vw;
+    }
+
+    .quote-line {
+        margin: 2rem auto;
+        width: 60%;
+        font-size: 2vw;
+    }
+
+    .left-footer,
+    .right-footer {
+        width: 50%;
+    }
+}
