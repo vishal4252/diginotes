@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPU Notes</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="branches.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar p-3">
             <div class="container-md">
-                <a class="navbar-brand fw-bolder fs-3 me-0" href="#">Logo.</a>
+                <a class="navbar-brand fw-bolder fs-3 me-0" href="index.html">Logo.</a>
                 <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -31,24 +32,30 @@
                     <div class="offcanvas-body fw-semibold">
                         <ul class="navbar-nav justify-content-end flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:support@ipunotes.com" target="_blank">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    IPU Notes
+                                    Our Services
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item disabled" href="practicalfiles.html">Practical Files</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="mailto:support@ipunotes.com"
-                                            target="_blank">Contact Us</a></li>
+                                    <li><a class="dropdown-item text-white" href="notes.html">Notes</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -57,85 +64,36 @@
             </div>
         </nav>
     </header>
-    <main class="d-flex align-items-center justify-content-center flex-column p-3" data-aos="zoom-in"
-        data-aos-delay="170" data-aos-delay="200">
-        <section class="container-md d-flex align-items-center justify-content-between flex-wrap">
-            <div class="fw-semibold">
-                <ul class="d-flex gap-3 list-unstyled">
-                    <li><a class="text-decoration-none text-black" href="#">Home</a></li>
-                    <li><a class="text-decoration-none text-black" href="about.html">About</a></li>
-                    <li><a class="text-decoration-none text-black d-none d-sm-block" href="mailto:support@ipunotes.com"
-                            target="_blank">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="dropdown-menu-start">
-                <button class="btn btn-dark rounded-2 dropdown-toggle py-2 px-3" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Services
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark rounded-2">
-                    <li><a class="dropdown-item" href="notes.html">Notes</a></li>
-                    <li><a class="dropdown-item" href="practicalfiles.html">Practical Files</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="d-flex">
-            <form class="container-md my-5">
-                <input class="search-input position-relative" type="text" name="search" id="search" autocomplete="off"
-                    placeholder="Search your notes here">
-                <button
-                    class="search-btn fs-3 position-absolute d-inline-flex align-items-center justify-content-center"
-                    type="submit"><ion-icon name="search"></ion-icon>
-                </button>
-            </form>
-        </section>
-        <section class="p-3">
-            <div class="container-md d-flex align-items-center justify-content-center flex-column">
-                <div class="text-center">
-                    <h1 class="tag-line">
-                        Empowering learners of all ages
-                    </h1>
-                    <h4 class="quote-line">
-                        Learn from the best and get ahead in your studies with free notes and resources
-                    </h4>
-                </div>
-                <div class="hero-img">
-                    <img class="img-fluid" src="images/bubble-gum-success.gif" width="500px" height="500px" alt=""
-                        srcset="">
-                </div>
-            </div>
+    <main class="p-3" data-aos="zoom-in" data-aos-delay="170" data-aos-delay="200">
+        <section class="container-md d-flex align-items-center justify-content-center flex-column">
+            <h1 class="my-5 text-center text-uppercase fw-bold">
+                Bachelor Of Computer Application
+            </h1>
+            <img class="img-fluid" src="images/boba-software-developer-coding-with-two-monitors-456x456.png" alt=""
+                srcset="">
         </section>
     </main>
     <section class="p-3">
         <div class="container-md">
-            <h2 class="fs-1 my-5 text-center text-uppercase fw-bold" data-aos="fade-up" data-aos-delay="170"
-                data-aos-offset="200">
-                Frequent Notes
+            <h2 class="fs-3 my-5 text-center text-uppercase fw-bold">
+                Practical files
             </h2>
+        </div>
+        <div class="container-md">
             <div class="d-flex align-items-center justify-content-center gap-3 gap-md-5 flex-wrap">
                 <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
                     data-aos-offset="200">
-                    <img src="images/se.svg" width="200px" height="200px" class="m-auto border-bottom p-5" alt="...">
-                    <a href="notes/SOFTWATE ENGINEERING.pdf" target="_blank"
-                        class="card-body my-2 text-decoration-none">
+                    <img src="images/asp.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/ASP DOT NET FILE.pdf" class="card-body my-2 text-decoration-none">
                         <p class="card-text text-center fw-semibold">
-                            Software Engineering
+                            ASP DOT NET
                         </p>
                     </a>
                 </div>
                 <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
                     data-aos-offset="200">
-                    <img src="images/cpp.svg" width="200px" height="200px" class="m-auto border-bottom p-5" alt="...">
-                    <a href="notes/C++.pdf" target="_blank" class="card-body my-2 text-decoration-none">
-                        <p class="card-text text-center fw-semibold">
-                            OOPs With C++
-                        </p>
-                    </a>
-                </div>
-                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
-                    data-aos-offset="200">
-                    <img src="images/c.svg" width="200px" height="200px" class="m-auto border-bottom p-5" alt="...">
-                    <a href="notes/C PROGRAMMING.pdf" target="_blank" class="card-body my-2 text-decoration-none">
+                    <img src="images/c.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/C PROGRAMMING FILE.pdf" class="card-body my-2 text-decoration-none">
                         <p class="card-text text-center fw-semibold">
                             Programming Using C Lang.
                         </p>
@@ -143,38 +101,17 @@
                 </div>
                 <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
                     data-aos-offset="200">
-                    <img src="images/cybersecurity.svg" width="200px" height="200px" class="m-auto border-bottom p-5"
-                        alt="...">
-                    <a href="notes/CYBER SECURITY.pdf" target="_blank" class="card-body my-2 text-decoration-none">
+                    <img src="images/cpp.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/C++ PROGRAMMING FILE.pdf" class="card-body my-2 text-decoration-none">
                         <p class="card-text text-center fw-semibold">
-                            Cyber Security
+                            OOPs With C++
                         </p>
                     </a>
                 </div>
                 <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
                     data-aos-offset="200">
-                    <img src="images/linuxOs.svg" width="200px" height="200px" class="m-auto border-bottom p-5"
-                        alt="...">
-                    <a href="#" class="card-body my-2 text-decoration-none">
-                        <p class="card-text text-center fw-semibold">
-                            Linux Programming
-                        </p>
-                    </a>
-                </div>
-                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
-                    data-aos-offset="200">
-                    <img src="images/cn.svg" width="200px" height="200px" class="m-auto border-bottom p-5" alt="...">
-                    <a href="notes/COMPUTER NETWORKS.pdf" class="card-body my-2 text-decoration-none">
-                        <p class="card-text text-center fw-semibold">
-                            Computer Networks
-                        </p>
-                    </a>
-                </div>
-                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
-                    data-aos-offset="200">
-                    <img src="images/computergraphics.svg" width="200px" height="200px" class="m-auto border-bottom p-5"
-                        alt="...">
-                    <a href="#" class="card-body my-2 text-decoration-none">
+                    <img src="images/computergraphics.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/COM GRAPHICS FILE.pdf" class="card-body my-2 text-decoration-none">
                         <p class="card-text text-center fw-semibold">
                             Computer Graphics
                         </p>
@@ -182,29 +119,82 @@
                 </div>
                 <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
                     data-aos-offset="200">
-                    <img src="images/digitalmarketing.svg" width="200px" height="200px" class="m-auto border-bottom p-5"
-                        alt="...">
-                    <a href="#" class="card-body my-2 text-decoration-none">
+                    <img src="images/cybersecurity.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/CYBER SECURITY FILE.pdf" class="card-body my-2 text-decoration-none">
                         <p class="card-text text-center fw-semibold">
-                            Digital Marketing
+                            Cyber Security
                         </p>
                     </a>
                 </div>
                 <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
                     data-aos-offset="200">
-                    <img src="images/pom.svg" width="200px" height="200px" class="m-auto border-bottom p-5" alt="...">
-                    <a href="notes/POM AND OB.pdf" class="card-body my-2 text-decoration-none">
+                    <img src="images/dbms.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/DBMS FILE.pdf" class="card-body my-2 text-decoration-none">
                         <p class="card-text text-center fw-semibold">
-                            Principles Of Management
+                            DBMS
                         </p>
                     </a>
                 </div>
                 <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
                     data-aos-offset="200">
-                    <img src="images/hve.svg" width="200px" height="200px" class="m-auto border-bottom p-5" alt="...">
-                    <a href="notes/HUMAN VALUES AND ETHICS.pdf" class="card-body my-2 text-decoration-none">
+                    <img src="images/dsa.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/DS ALGO FILE.pdf" class="card-body my-2 text-decoration-none">
                         <p class="card-text text-center fw-semibold">
-                            Human Values and Ethics
+                            Data Structure & Algorithm
+                        </p>
+                    </a>
+                </div>
+                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
+                    data-aos-offset="200">
+                    <img src="images/focit.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/FOC FILE.pdf" class="card-body my-2 text-decoration-none">
+                        <p class="card-text text-center fw-semibold">
+                            Fundamentals Of Computer
+                        </p>
+                    </a>
+                </div>
+                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
+                    data-aos-offset="200">
+                    <img src="images/ai.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/IAI LAB FILE.pdf" class="card-body my-2 text-decoration-none">
+                        <p class="card-text text-center fw-semibold">
+                            Introduction to A.I
+                        </p>
+                    </a>
+                </div>
+                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
+                    data-aos-offset="200">
+                    <img src="images/java.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/JAVA LAB FILE.pdf" class="card-body my-2 text-decoration-none">
+                        <p class="card-text text-center fw-semibold">
+                            Java Programming
+                        </p>
+                    </a>
+                </div>
+                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
+                    data-aos-offset="200">
+                    <img src="images/vb.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/VB DOT NET FILE.pdf" class="card-body my-2 text-decoration-none">
+                        <p class="card-text text-center fw-semibold">
+                            VB DOT NET
+                        </p>
+                    </a>
+                </div>
+                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
+                    data-aos-offset="200">
+                    <img src="images/wbp.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/WEB BASED PRO FILE.pdf" class="card-body my-2 text-decoration-none">
+                        <p class="card-text text-center fw-semibold">
+                            Web Based Programming
+                        </p>
+                    </a>
+                </div>
+                <div class="card rounded-2 border-0" style="width: 16rem;" data-aos="fade-up" data-aos-delay="170"
+                    data-aos-offset="200">
+                    <img src="images/webtech.png" class="m-auto border-bottom p-4" alt="...">
+                    <a href="practical-files/WEB TECH FILE.pdf" class="card-body my-2 text-decoration-none">
+                        <p class="card-text text-center fw-semibold">
+                            Web Technologies
                         </p>
                     </a>
                 </div>
@@ -224,7 +214,7 @@
                     <a href="notes.html" class="text-decoration-none text-black">
                         <li><span><ion-icon name="chevron-forward"></ion-icon></span> Digital Notes</li>
                     </a>
-                    <a href="practicalfiles.html" class="text-decoration-none text-black">
+                    <a href="#" class="text-decoration-none text-black">
                         <li><span><ion-icon name="chevron-forward"></ion-icon></span> Practical Files</li>
                     </a>
                 </ul>
@@ -263,11 +253,14 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>

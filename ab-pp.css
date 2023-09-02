@@ -6,8 +6,7 @@ span {
     font-weight: bold;
 }
 
-section p,
-ul li {
+section p {
     font-weight: 600;
     text-align: justify;
 }
@@ -15,4 +14,6 @@ ul li {
 section ul li {
     list-style: none;
     margin: 0.5rem 0;
+    font-weight: 600;
+    text-align: justify;
 }
