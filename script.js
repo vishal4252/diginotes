@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     pdfLink.addEventListener('click', function (event) {
         event.preventDefault();
-        window.open(pdfLink.getAttribute('href'), '_parent');
+        window.open(pdfLink.getAttribute('href'), '_blank');
     });
 });
