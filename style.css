@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #08D9D6;
+    --outline-color: #fff;
+    --box-shadow-color: #000000;
+}
+
+@media(prefers-color-scheme:dark) {
+    :root {
+        --bg-color: #08D9D6;
+        --outline-color: #fff;
+        --box-shadow-color: #000000;
+    }
+}
+
 body,
 html {
     scroll-behavior: smooth;
@@ -11,7 +25,7 @@ html {
 
 nav,
 .offcanvas {
-    background-color: #08D9D6;
+    background-color: var(--bg-color);
 }
 
 .navbar-toggler-icon {
@@ -37,7 +51,7 @@ nav,
 }
 
 .scroll-up-btn {
-    background-color: #08D9D6;
+    background-color: var(--bg-color);
     width: 50px;
     height: 50px;
 }
@@ -60,10 +74,10 @@ nav,
     width: 75vw;
     height: 3.7rem;
     padding: 0 4rem 0 1.5rem;
-    outline: #fff;
+    outline: var(--outline-color);
     border-radius: 10rem;
     border: none;
-    box-shadow: 1px 1px 7px -3px #000000;
+    box-shadow: 1px 1px 7px -3px var(--box-shadow-color);
 }
 
 .search-btn {
@@ -87,7 +101,7 @@ nav,
 }
 
 .card {
-    box-shadow: 0px 1px 7px -3px #000000;
+    box-shadow: 0px 1px 7px -3px var(--box-shadow-color);
 }
 
 .left-footer,
