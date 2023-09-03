@@ -2,11 +2,13 @@ AOS.init(
     duration = 500
 );
 
-document.addEventListener('DOMContentLoaded', function () {
-    const pdfLink = document.getElementById('pdfLink');
+function openPDFInParentTab(url) {
+    var win = window.open(url, "_parent");
+    win.focus();
+}
 
-    pdfLink.addEventListener('click', function (event) {
-        event.preventDefault();
-        window.open(pdfLink.getAttribute('href'), '_blank');
-    });
-});
+// Attach the function to the onclick event of the PDF link
+var pdfLink = document.querySelector("a[href*='.pdf']");
+pdfLink.onclick = function () {
+    openPDFInParentTab(this.href);
+};
