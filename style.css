@@ -8,6 +8,7 @@
     --bg-color: #08D9D6;
     --outline-color: #fff;
     --box-shadow-color: #000000;
+    --border-bg: #08D9D6;
     --scroll-bg: #fff;
     --scroll-thumb-bg: #08D9D6;
     --scroll-thumb-hvr-bg: #1fa4a2;
@@ -18,6 +19,7 @@
         --bg-color: #08D9D6;
         --outline-color: #fff;
         --box-shadow-color: #000000;
+        --border-bg: #08D9D6;
         --scroll-bg: #fff;
         --scroll-thumb-bg: #08D9D6;
         --scroll-thumb-hvr-bg: #1fa4a2;
@@ -95,22 +97,49 @@ nav,
     }
 }
 
-.search-input {
+#search-bar {
     width: 75vw;
     height: 3.7rem;
     padding: 0 4rem 0 1.5rem;
     outline: var(--outline-color);
-    border-radius: 10rem;
-    border: none;
-    box-shadow: 1px 1px 7px -3px var(--box-shadow-color);
+    border-radius: 0.5rem;
+    border: 2px solid var(--border-bg);
 }
 
-.search-btn {
+#search-bar:focus {
+    border-radius: 0rem;
+}
+
+.search-icon {
+    display: none;
     outline: none;
     background: none;
     border: none;
     height: 3.7rem;
     right: 18%;
+}
+
+#suggestions {
+    max-height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    width: 75vw;
+    margin: auto;
+    border-bottom: 1px solid var(--border-bg);
+    border-left: 1px solid var(--border-bg);
+    border-right: 1px solid var(--border-bg);
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #fbfbfb;
 }
 
 .tag-line {
@@ -135,13 +164,19 @@ nav,
 }
 
 @media(min-width:768px) {
-    .search-input {
+    #search-bar {
         width: 50vw;
         height: 4rem;
         padding: 0 4rem 0 3rem;
     }
 
-    .search-btn {
+    .suggestion {
+        width: 50vw;
+        height: 4rem;
+        padding: 0 4rem 0 3rem;
+    }
+
+    .search-icon {
         width: 4rem;
         height: 4rem;
         right: 25.5%;
