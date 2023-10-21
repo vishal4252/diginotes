@@ -138,6 +138,10 @@ nav,
     cursor: pointer;
 }
 
+#suggestions::-webkit-scrollbar {
+    display: none;
+}
+
 .suggestion:hover {
     background-color: #fbfbfb;
 }
